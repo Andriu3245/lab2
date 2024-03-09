@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>
+            Blog by Andrii
+        </h1>
+    </div>
+    <div class="filter">
+    <button onclick="loadPosts('info')">info blogs</button>
+    <button onclick="loadPosts('event')">interesting events on matfak</button>
+    </div>
+    <div class="container" id="container">
+
+    </div>
+
+    <div class="subscribe" id="subscribe-modal">
+        <div class="subscribe-content">
+            Please subscribe to the page 
+            <button onclick="subscribe()">Subscribe</button>
+            <div id="seconds"></div>
+            <button id="close-button" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
